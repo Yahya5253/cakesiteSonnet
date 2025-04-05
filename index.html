@@ -3,113 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Bakery</title>
+    <title>Delicious Cakes</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="https://cdn.pixabay.com/photo/2018/07/01/19/50/muffin-3510308_1280.jpg">
-
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav class="navbar">
-  <div class="logo">Home Bakery</div>
-  <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-  </div>
-  <ul class="nav-links" id="nav-links">
-      <li><a href="#specialities">Our Specialities</a></li>
-      <li><a href="#creations">Our Creations</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-  </ul>
-</nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Delicious Cakes</div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#specialties">Specialties</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#order-process">How to Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-
-    <!-- Header with Image Slider -->
-    <header>
-      <div class="slider">
-          <img src="https://cdn.pixabay.com/photo/2022/05/03/20/01/black-forest-cake-7172587_1280.jpg" alt="Cake Image 1">
-          <img src="https://cdn.pixabay.com/photo/2016/11/29/11/38/cake-1869227_1280.jpg" alt="Cake Image 2">
-          <img src="https://cdn.pixabay.com/photo/2017/01/23/08/45/cake-2001781_1280.jpg" alt="Cake Image 3">
-      </div>
-      <div class="order-now-container">
-        <a href="#contact" class="order-now-btn">Order Now</a>
-    </div>  
-  </header> 
-      <!-- Our Specialities Section -->
-<section id="specialities" class="specialities">
-  <h2>Our Specialities</h2>
-  <div class="specialities-container">
-      <div class="speciality-item">
-          <img src="https://cdn.pixabay.com/photo/2016/12/17/20/52/cake-1914463_1280.jpg" alt="Custom Cakes">
-          <h3>Custom Cakes</h3>
-          <p>Beautiful, handcrafted cakes for every occasion.</p>
-      </div>
-      <div class="speciality-item">
-          <img src="https://cdn.pixabay.com/photo/2021/08/04/20/07/cakes-6522512_1280.jpg" alt="Delicious Pastries">
-          <h3>Delicious Pastries</h3>
-          <p>Freshly baked pastries with rich flavors.</p>
-      </div>
-      <div class="speciality-item">
-          <img src="https://cdn.pixabay.com/photo/2024/01/12/07/00/bread-8503298_1280.jpg" alt="Artisanal Bread">
-          <h3>Artisanal Bread</h3>
-          <p>Healthy and flavorful bread made from the finest ingredients.</p>
-      </div>
-  </div>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-slider">
+        <div class="hero-slide active">
+            <img src="https://cdn.pixabay.com/photo/2022/05/03/20/01/black-forest-cake-7172587_1280.jpg" alt="Black Forest Cake">
+        </div>
+        <div class="hero-slide">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/11/38/cake-1869227_1280.jpg" alt="Birthday Cake">
+        </div>
+        <div class="hero-slide">
+            <img src="https://cdn.pixabay.com/photo/2017/01/23/08/45/cake-2001781_1280.jpg" alt="Wedding Cake">
+        </div>
+    </div>
+    <div class="hero-content">
+        <h1>Delicious Cakes</h1>
+        <p class="tagline">Baked with Love in Every Slice</p>
+        <a href="#contact" class="cta-button">Order Now</a>
+    </div>
+    <div class="hero-slider-nav">
+        <span class="hero-slider-dot active" data-index="0"></span>
+        <span class="hero-slider-dot" data-index="1"></span>
+        <span class="hero-slider-dot" data-index="2"></span>
+    </div>
 </section>
-    
-    <!-- Our Creations -->
-    <section id="creations" class="creations">
-      <h2>Our Creations</h2>
-      <div class="gallery">
-          <img src="https://cdn.pixabay.com/photo/2017/06/03/23/38/cake-2369978_1280.jpg" alt="Cupcake">
-          <img src="https://cdn.pixabay.com/photo/2016/11/29/11/38/cake-1869227_1280.jpg" alt="Dessert">
-          <img src="https://cdn.pixabay.com/photo/2016/07/01/19/43/pretzels-1491789_1280.jpg" alt="Bread">
-          <img src="https://cdn.pixabay.com/photo/2014/07/21/23/00/orange-cake-398966_1280.jpg" alt="Cakes">
-      </div>
-  </section>
-  
-    
-    <!-- Customer Testimonials -->
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About the Baker</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://cdn.pixabay.com/photo/2017/01/22/16/25/baking-2000142_1280.jpg" alt="Baker" height="50">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Sarah, a passionate baker with over 10 years of experience crafting delicious treats. My journey began in my grandmother's kitchen, where I discovered the joy of creating something delicious from scratch.</p>
+                    <p>Every cake, pastry, and bread that comes from my kitchen is made with premium ingredients and immense care. I believe that baking is not just about food—it's about creating moments of joy for you and your loved ones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="specialties">
+        <div class="container">
+            <h2>Our Specialties</h2>
+            <div class="specialty-items">
+                <div class="specialty-item">
+                    <img src="https://cdn.pixabay.com/photo/2016/12/17/20/52/cake-1914463_1280.jpg" alt="Custom Cakes">
+                    <h3>Custom Cakes</h3>
+                    <p>Beautiful, handcrafted cakes for every occasion, made to your specifications.</p>
+                </div>
+                <div class="specialty-item">
+                    <img src="https://cdn.pixabay.com/photo/2021/08/04/20/07/cakes-6522512_1280.jpg" alt="Delicious Pastries">
+                    <h3>Delicious Pastries</h3>
+                    <p>Freshly baked pastries with rich flavors that will satisfy any sweet tooth.</p>
+                </div>
+                <div class="specialty-item">
+                    <img src="https://cdn.pixabay.com/photo/2024/01/12/07/00/bread-8503298_1280.jpg" alt="Artisanal Bread">
+                    <h3>Artisanal Bread</h3>
+                    <p>Healthy and flavorful bread made from the finest ingredients and traditional methods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Creations</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-img="https://cdn.pixabay.com/photo/2017/06/03/23/38/cake-2369978_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2017/06/03/23/38/cake-2369978_1280.jpg" alt="Cupcake">
+                </div>
+                <div class="gallery-item" data-img="https://cdn.pixabay.com/photo/2016/11/29/11/38/cake-1869227_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/11/38/cake-1869227_1280.jpg" alt="Dessert">
+                </div>
+                <div class="gallery-item" data-img="https://cdn.pixabay.com/photo/2016/07/01/19/43/pretzels-1491789_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2016/07/01/19/43/pretzels-1491789_1280.jpg" alt="Bread">
+                </div>
+                <div class="gallery-item" data-img="https://cdn.pixabay.com/photo/2014/07/21/23/00/orange-cake-398966_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2014/07/21/23/00/orange-cake-398966_1280.jpg" alt="Cakes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Gallery Images -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
-      <h2>What Our Customers Say</h2>
-      <div class="testimonial-carousel">
-          <div class="testimonial">
-              <img src="https://cdn.pixabay.com/photo/2021/03/14/10/13/girl-6093779_1280.jpg" alt="Customer 1">
-              <p>"Absolutely delicious cakes! Highly recommend."</p>
-              <h3>⭐⭐⭐⭐⭐</h3>
-          </div>
-          <div class="testimonial">
-              <img src="https://cdn.pixabay.com/photo/2020/04/09/19/59/man-5022931_1280.jpg" alt="Customer 2">
-              <p>"Perfect flavors and textures. My go-to bakery!"</p>
-              <h3>⭐⭐⭐⭐⭐</h3>
-          </div>
-      </div>
-  </section>
-  
-    
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <img src="https://cdn.pixabay.com/photo/2021/03/14/10/13/girl-6093779_1280.jpg" alt="Customer 1">
+                    <p>"Absolutely delicious cakes! Every bite is pure joy. Their attention to detail is incredible and the flavors are out of this world."</p>
+                    <h3 class="rating">⭐⭐⭐⭐⭐</h3>
+                    <p class="customer-name">- Emily Johnson</p>
+                </div>
+                <div class="testimonial">
+                    <img src="https://cdn.pixabay.com/photo/2020/04/09/19/59/man-5022931_1280.jpg" alt="Customer 2">
+                    <p>"Perfect flavors and textures. My go-to bakery for all celebrations! The custom cake they made for my daughter's birthday was spectacular."</p>
+                    <h3 class="rating">⭐⭐⭐⭐⭐</h3>
+                    <p class="customer-name">- Michael Smith</p>
+                </div>
+                <div class="testimonial">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/01/08/29/woman-2563491_1280.jpg" alt="Customer 3">
+                    <p>"The artisanal bread is simply amazing. I've tried many bakeries, but this one truly stands out for quality and taste!"</p>
+                    <h3 class="rating">⭐⭐⭐⭐⭐</h3>
+                    <p class="customer-name">- Sarah Davis</p>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <span class="slider-dot active" data-index="0"></span>
+                <span class="slider-dot" data-index="1"></span>
+                <span class="slider-dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Process Section -->
+    <section id="order-process" class="order-process">
+        <div class="container">
+            <h2>How to Order</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>1. Choose</h3>
+                    <p>Browse our selection and choose your favorite items or request a custom creation.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>2. Confirm</h3>
+                    <p>Contact us via WhatsApp or our form to confirm your order details and schedule.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>3. Pickup/Delivery</h3>
+                    <p>Pick up your order at our location or choose delivery for your convenience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
+
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/" class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-  </a>
-  
-    
+    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Footer -->
     <footer>
-        <p>© 2025 Created by using AI-assisted coding | <a href ="https://www.linkedin.com/in/yahya-bandukwala/" target="_blank">Yahya Banduwkala</a></p>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>© 2025 Delicious Cakes | Created with ❤️ by <a href="https://www.linkedin.com/in/yahya-bandukwala/" target="_blank">Yahya Bandukwala</a></p>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
